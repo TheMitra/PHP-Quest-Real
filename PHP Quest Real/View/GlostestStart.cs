@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PHP_Quest_Real.Control;
 
 namespace PHP_Quest_Real.View
 {
     public partial class GlostestStart : Form
     {
+        
         public GlostestStart()
         {
             InitializeComponent();
+            
         }
     }
 }

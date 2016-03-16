@@ -15,7 +15,6 @@ namespace PHP_Quest_Real
         private GlosTestControl glosTest;
         
         
-
         // Initiera listor
         public MasterControl()
         {
@@ -23,9 +22,7 @@ namespace PHP_Quest_Real
             glosLista = new GlosLista();
             currentUser = new User("username", "password");
         }
-
-
-
+        
         
         /*          Metoder för UserList        */
         // Logga in: 
@@ -48,8 +45,7 @@ namespace PHP_Quest_Real
         }
 
 
-
-
+        
         /*      Metoder för GlosLista och Glosa     */
         // Registrera glosa:
         public bool RegistreraGlosaVailid(string ord, string översättning, string språk, User user)

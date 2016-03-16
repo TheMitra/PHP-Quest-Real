@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\CurrentUser.cs" />
     <Compile Include="Control\GlosLista.cs" />
     <Compile Include="Control\GlosTestControl.cs" />
     <Compile Include="Control\MasterControl.cs" />
