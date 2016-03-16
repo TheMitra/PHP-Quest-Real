@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PHP_Quest_Real.Control;
 
 namespace PHP_Quest_Real
 {
@@ -25,7 +26,7 @@ namespace PHP_Quest_Real
             // Check if the login information is valid
             if (master.ValidLogin(txbUsername.Text, txbPassword.Text))
             {
-                master.CurrentUser = new User(txbUsername.Text, txbPassword.Text);
+                CurrentUser currentUser = new CurrentUser(txbUsername.Text, txbPassword.Text);
                 mainMenu.Show();
                 this.Hide();
             }

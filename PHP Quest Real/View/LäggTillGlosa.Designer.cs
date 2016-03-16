@@ -34,6 +34,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.glosaSv = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -96,11 +97,21 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Glosan på Svenska:";
             // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(12, 114);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(40, 13);
+            this.lblStatus.TabIndex = 13;
+            this.lblStatus.Text = "Status:";
+            // 
             // LäggTillGlosa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(334, 141);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.språk);
             this.Controls.Add(this.glosa);
@@ -122,5 +133,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox glosaSv;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblStatus;
     }
 }

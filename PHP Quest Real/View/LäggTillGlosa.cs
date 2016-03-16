@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PHP_Quest_Real.Control;
 
 namespace PHP_Quest_Real.View
 {
@@ -21,7 +22,14 @@ namespace PHP_Quest_Real.View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            master.RegistreraGlosaVailid(glosa.Text, glosaSv.Text, språk.Text, master.CurrentUser);
+            if (språk.Text != "Välj språk")
+            {
+                master.RegistreraGlosaVailid(glosa.Text, glosaSv.Text, språk.Text, CurrentUser.GetUser);
+            }
+            else
+            {
+                lblStatus.Text = "Error.";
+            }
         }
     }
 }

@@ -125,6 +125,7 @@
             this.btnNySpråk.TabIndex = 10;
             this.btnNySpråk.Text = "Lägg till nytt språk";
             this.btnNySpråk.UseVisualStyleBackColor = false;
+            this.btnNySpråk.Click += new System.EventHandler(this.btnNySpråk_Click);
             // 
             // btnNyGlosa
             // 

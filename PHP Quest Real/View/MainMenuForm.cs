@@ -25,5 +25,10 @@ namespace PHP_Quest_Real
         {
             addGlosa.Show();
         }
+
+        private void btnNySpråk_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

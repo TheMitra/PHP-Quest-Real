@@ -9,8 +9,14 @@ namespace PHP_Quest_Real.Control
     class CurrentUser
     {
         private static User currentUser;
-        
-        static User GetUser
+
+
+        public CurrentUser(string username, string password)
+        {
+            currentUser = new User(username, password);
+        }
+
+        public static User GetUser
         {
             get { return currentUser; }
             set { currentUser = value; }
