@@ -16,3 +16,6 @@ C:\Users\13hedpon\Desktop\PHP Quest Real\PHP Quest Real\obj\Debug\PHP Quest Real
 K:\PHP Quest projekt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.GlostestStart.resources
 K:\PHP Quest projekt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.LäggTillGlosa.resources
 K:\PHP Quest projekt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.MainMenuForm.resources
+M:\IMT3 Data\Amanda och Pontus\Användargränssnitt\PHP Quest Real\PHP Quest Real\bin\Debug\PHP Quest Real.exe.config
+M:\IMT3 Data\Amanda och Pontus\Användargränssnitt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP Quest Real.exe
+M:\IMT3 Data\Amanda och Pontus\Användargränssnitt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP Quest Real.pdb

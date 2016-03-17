@@ -56,11 +56,29 @@
     <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\GlostestResultat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GlostestResultat.Designer.cs">
+      <DependentUpon>GlostestResultat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GlostestLätt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GlostestLätt.Designer.cs">
+      <DependentUpon>GlostestLätt.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\GlostestStart.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\GlostestStart.Designer.cs">
       <DependentUpon>GlostestStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\GlostestSvår.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\GlostestSvår.Designer.cs">
+      <DependentUpon>GlostestSvår.cs</DependentUpon>
     </Compile>
     <Compile Include="View\LäggTillGlosa.cs">
       <SubType>Form</SubType>
@@ -73,6 +91,12 @@
     </Compile>
     <Compile Include="View\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LäggTillSpråk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LäggTillSpråk.Designer.cs">
+      <DependentUpon>LäggTillSpråk.cs</DependentUpon>
     </Compile>
     <Compile Include="View\MainMenuForm.cs">
       <SubType>Form</SubType>
@@ -89,14 +113,26 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\GlostestLätt.resx">
+      <DependentUpon>GlostestLätt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GlostestResultat.resx">
+      <DependentUpon>GlostestResultat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\GlostestStart.resx">
       <DependentUpon>GlostestStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\GlostestSvår.resx">
+      <DependentUpon>GlostestSvår.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\LäggTillGlosa.resx">
       <DependentUpon>LäggTillGlosa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LäggTillSpråk.resx">
+      <DependentUpon>LäggTillSpråk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\MainMenuForm.resx">
       <DependentUpon>MainMenuForm.cs</DependentUpon>

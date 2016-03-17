@@ -30,14 +30,18 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -61,43 +65,6 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Valda glosor";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(240, 192);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(112, 23);
-            this.progressBar1.TabIndex = 19;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(124, 221);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(93, 23);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "Starta glostestet";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(124, 192);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 23);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Lägg till";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 192);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -135,17 +102,103 @@
             this.listBox1.Size = new System.Drawing.Size(91, 147);
             this.listBox1.TabIndex = 12;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(193, 237);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(111, 15);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "Statusmeddelande";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 235);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(106, 15);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "Välj svårighetsrad:";
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(12, 278);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(142, 17);
+            this.radioButton2.TabIndex = 31;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Svår (Skriv in ordet själv)";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(12, 255);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(129, 17);
+            this.radioButton1.TabIndex = 30;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Lätt (Välj mellan 4 ord)";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(240, 192);
+            this.progressBar1.Maximum = 10;
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(112, 23);
+            this.progressBar1.Step = 1;
+            this.progressBar1.TabIndex = 29;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(196, 268);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(123, 27);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "Starta glostestet";
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(124, 192);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 23);
+            this.button2.TabIndex = 27;
+            this.button2.Text = "Lägg till";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 192);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 23);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Lägg till";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // GlostestStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 261);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(364, 309);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox2);
@@ -153,6 +206,7 @@
             this.Name = "GlostestStart";
             this.Text = "GlostestStart";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -160,13 +214,17 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
