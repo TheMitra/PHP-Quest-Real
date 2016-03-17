@@ -14,11 +14,13 @@ namespace PHP_Quest_Real.View
     public partial class LäggTillGlosa : Form
     {
         MasterControl master = new MasterControl();
-
+        CurrentUser currentUser;
+        
         public LäggTillGlosa()
         {
             InitializeComponent();
-            språk.Items.Add(master.CurrentUser);
+            currentUser = master.CurrentUser; 
+            språk.Items.Add("Engelska");
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -26,7 +26,7 @@ namespace PHP_Quest_Real
             // Check if the login information is valid
             if (master.ValidLogin(txbUsername.Text, txbPassword.Text))
             {
-                CurrentUser currentUser = new CurrentUser(txbUsername.Text, txbPassword.Text);
+                
                 mainMenu.Show();
                 this.Hide();
             }

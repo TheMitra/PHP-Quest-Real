@@ -92,7 +92,5 @@ namespace PHP_Quest_Real
             set { value = currentUser; }
         }
 
-        
-
     }    
 }
