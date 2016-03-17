@@ -18,6 +18,7 @@ namespace PHP_Quest_Real.View
         public LäggTillGlosa()
         {
             InitializeComponent();
+            språk.Items.Add(master.CurrentUser);
         }
 
         private void button1_Click(object sender, EventArgs e)

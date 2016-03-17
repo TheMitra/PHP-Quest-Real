@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PHP_Quest_Real.Control;
 
 namespace PHP_Quest_Real
 {
@@ -11,16 +12,16 @@ namespace PHP_Quest_Real
         // Konstruera listor
         private UserList userList;
         private GlosLista glosLista;
-        private User currentUser;
+        private CurrentUser currentUser;
         private GlosTestControl glosTest;
         
+
         
         // Initiera listor
         public MasterControl()
         {
             userList = new UserList();
             glosLista = new GlosLista();
-            currentUser = new User("username", "password");
         }
         
         
@@ -31,8 +32,7 @@ namespace PHP_Quest_Real
         {
             if (userList.Login(username, password))
             {
-                currentUser.Username = username;
-                currentUser.Password = password;
+                currentUser = new CurrentUser(username, password);
                 return true;
             }
             return false;
@@ -48,14 +48,22 @@ namespace PHP_Quest_Real
         
         /*      Metoder för GlosLista och Glosa     */
         // Registrera glosa:
-        public bool RegistreraGlosaVailid(string ord, string översättning, string språk, User user)
+        public void RegistreraGlosaVailid(string ord, string översättning, string språk, User user)
         {
-            return glosLista.RegistreraGlosaValid(ord, översättning, språk, user);
+            if (glosLista.RegistreraGlosaValid(ord, översättning, språk, user))
+            {
+                Glosa nyGlosa = new Glosa(ord, översättning, språk, user);                
+            } 
         }
         // Ta bort glosa
         public void DeleteGlosa(Glosa glosa)
         {
             glosLista.Delete(glosa);
+        }
+        // Registrera språk:
+        public bool RegistreraSpråkValid(string språk)
+        {
+            return glosLista.RegistreraSpråkValid(språk);
         }
 
 
@@ -78,11 +86,13 @@ namespace PHP_Quest_Real
             }
         }
 
-        public User CurrentUser
+        public CurrentUser CurrentUser
         {
             get { return currentUser; }
             set { value = currentUser; }
         }
+
+        
 
     }    
 }

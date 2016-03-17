@@ -19,3 +19,7 @@ K:\PHP Quest projekt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.Main
 M:\IMT3 Data\Amanda och Pontus\Användargränssnitt\PHP Quest Real\PHP Quest Real\bin\Debug\PHP Quest Real.exe.config
 M:\IMT3 Data\Amanda och Pontus\Användargränssnitt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP Quest Real.exe
 M:\IMT3 Data\Amanda och Pontus\Användargränssnitt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP Quest Real.pdb
+K:\PHP Quest projekt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.GlostestLätt.resources
+K:\PHP Quest projekt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.GlostestResultat.resources
+K:\PHP Quest projekt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.GlostestSvår.resources
+K:\PHP Quest projekt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.LäggTillSpråk.resources

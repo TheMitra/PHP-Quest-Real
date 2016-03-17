@@ -10,20 +10,24 @@ namespace PHP_Quest_Real
     class GlosLista
     {
         // Datamedlemmar:
-        private List<Glosa> glosLista;                      // Skapar en lista av glosklassen.
+        private List<Glosa> glosLista;                  // Skapar en lista av glosklassen.
+        private List<string> språkLista;
+        private Glosa glosa;
 
         public GlosLista()
         {
             glosLista = new List<Glosa>();
+            språkLista = new List<string>();
         }
-
-        public Glosa glosa;
+        
 
         public Glosa Glosa
         {
             get { return glosa; }
             set { glosa = value; }
         }
+
+        
 
         public void Add(Glosa item)
         {
@@ -59,9 +63,29 @@ namespace PHP_Quest_Real
                     return false;
                 }
             }
-
+            Glosa nyGlosa = new Glosa(ord, översättning, språk, user);
+            glosLista.Add(nyGlosa);
             return true;
         }
+        
+        public bool RegistreraSpråkValid(string språk)
+        {
+            // Input to lowercase med hjälp av metoden ToLower()
+            // Förhindrar att stringen inte stämmer beroende på om ordet är i lower eller uppercase.
+
+            string lowSpråk = språk.ToLower();
+            for (int i = 0; i < glosLista.Count; i++)
+            {
+                string text = glosLista[i].Språk.ToLower();
+                if (text == lowSpråk)
+                {
+                    return false;
+                }
+            }
+            språkLista.Add(språk);
+            return true;
+        }
+
         public void TestData()
         {
             Glosa ord = new Glosa("Bil", "Car", "Engelska", new User("Amanda", "Password"));

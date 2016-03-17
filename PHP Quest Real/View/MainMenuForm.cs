@@ -13,6 +13,7 @@ namespace PHP_Quest_Real
 {
     public partial class MainMenuForm : Form
     {
+        LäggTillSpråk addSpråk = new LäggTillSpråk();
         LäggTillGlosa addGlosa = new LäggTillGlosa();
         MasterControl master = new MasterControl();
         public MainMenuForm()
@@ -28,7 +29,7 @@ namespace PHP_Quest_Real
 
         private void btnNySpråk_Click(object sender, EventArgs e)
         {
-
+            addSpråk.Show();
         }
     }
 }
