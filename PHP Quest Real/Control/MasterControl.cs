@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PHP_Quest_Real.Control;
+using PHP_Quest_Real.View;
 
 namespace PHP_Quest_Real
 {
@@ -22,6 +23,7 @@ namespace PHP_Quest_Real
         {
             userList = new UserList();
             glosLista = new GlosLista();
+            glosLista.TestData();
         }
         
         
@@ -47,6 +49,13 @@ namespace PHP_Quest_Real
 
         
         /*      Metoder för GlosLista och Glosa     */
+        // Testdata för glosLista
+        public GlosLista GlosLista
+        {
+            get { return glosLista; }
+            set { glosLista = value; }
+        }
+
         // Registrera glosa:
         public void RegistreraGlosaVailid(string ord, string översättning, string språk, User user)
         {
@@ -64,6 +73,17 @@ namespace PHP_Quest_Real
         public bool RegistreraSpråkValid(string språk)
         {
             return glosLista.RegistreraSpråkValid(språk);
+        }
+        // Visa gloslista
+        public string ShowGlosorSv(int i)
+        {
+            string glosa = glosLista.ListGlosor[i].Ord;
+            return glosa;
+        }
+        // Visa storlek av gloslista
+        public int SizeGlostList()
+        {
+            return glosLista.ListGlosor.Count;
         }
 
 

@@ -28,10 +28,11 @@ namespace PHP_Quest_Real.View
             if (språk.Text != "Välj språk")
             {
                 master.RegistreraGlosaVailid(glosa.Text, glosaSv.Text, språk.Text, CurrentUser.GetUser);
+                lblStatus.Text = "Status: ";
             }
             else
             {
-                lblStatus.Text = "Error.";
+                lblStatus.Text = "Status: Error, välj språk.";
             }
         }
     }

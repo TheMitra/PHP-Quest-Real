@@ -16,9 +16,15 @@ namespace PHP_Quest_Real
         LäggTillSpråk addSpråk = new LäggTillSpråk();
         LäggTillGlosa addGlosa = new LäggTillGlosa();
         MasterControl master = new MasterControl();
+        GlosLista listGlosor = new GlosLista();
         public MainMenuForm()
         {
             InitializeComponent();
+            listGlosor.TestData();
+            for (int i = 0; i < master.SizeGlostList(); i++)
+            {
+                glosLista.Items.Add(master.ShowGlosorSv(i));
+            }
             
         }
 
