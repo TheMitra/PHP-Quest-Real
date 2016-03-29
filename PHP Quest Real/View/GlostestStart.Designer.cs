@@ -36,10 +36,10 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbSvår = new System.Windows.Forms.RadioButton();
+            this.rbLätt = new System.Windows.Forms.RadioButton();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -122,27 +122,27 @@
             this.label4.TabIndex = 32;
             this.label4.Text = "Välj svårighetsrad:";
             // 
-            // radioButton2
+            // rbSvår
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(12, 278);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(142, 17);
-            this.radioButton2.TabIndex = 31;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Svår (Skriv in ordet själv)";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbSvår.AutoSize = true;
+            this.rbSvår.Location = new System.Drawing.Point(12, 278);
+            this.rbSvår.Name = "rbSvår";
+            this.rbSvår.Size = new System.Drawing.Size(142, 17);
+            this.rbSvår.TabIndex = 31;
+            this.rbSvår.TabStop = true;
+            this.rbSvår.Text = "Svår (Skriv in ordet själv)";
+            this.rbSvår.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbLätt
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(12, 255);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(129, 17);
-            this.radioButton1.TabIndex = 30;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Lätt (Välj mellan 4 ord)";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbLätt.AutoSize = true;
+            this.rbLätt.Location = new System.Drawing.Point(12, 255);
+            this.rbLätt.Name = "rbLätt";
+            this.rbLätt.Size = new System.Drawing.Size(129, 17);
+            this.rbLätt.TabIndex = 30;
+            this.rbLätt.TabStop = true;
+            this.rbLätt.Text = "Lätt (Välj mellan 4 ord)";
+            this.rbLätt.UseVisualStyleBackColor = true;
             // 
             // progressBar1
             // 
@@ -153,18 +153,19 @@
             this.progressBar1.Step = 1;
             this.progressBar1.TabIndex = 29;
             // 
-            // button3
+            // btnStart
             // 
-            this.button3.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(196, 268);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(123, 27);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "Starta glostestet";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnStart.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnStart.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(196, 268);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(123, 27);
+            this.btnStart.TabIndex = 28;
+            this.btnStart.Text = "Starta glostestet";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // button2
             // 
@@ -191,10 +192,10 @@
             this.ClientSize = new System.Drawing.Size(364, 309);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbSvår);
+            this.Controls.Add(this.rbLätt);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -220,10 +221,10 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbSvår;
+        private System.Windows.Forms.RadioButton rbLätt;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
     }

@@ -13,10 +13,28 @@ namespace PHP_Quest_Real.View
 {
     public partial class GlostestStart : Form
     {
+
+        //Forms
+        GlostestLätt gtLätt = new GlostestLätt();
+        GlostestSvår gtSvår = new GlostestSvår();
         
         public GlostestStart()
         {
             InitializeComponent(); 
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            if (rbLätt.Checked == true)
+            {
+                gtLätt.Show();
+                this.Hide();
+            }
+            if (rbSvår.Checked == true)
+            {
+                gtSvår.Show();
+                this.Hide();
+            }
         }
     }
 }

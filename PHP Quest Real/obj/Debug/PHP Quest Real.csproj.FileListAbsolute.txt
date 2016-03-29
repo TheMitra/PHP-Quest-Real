@@ -23,3 +23,19 @@ K:\PHP Quest projekt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View
 K:\PHP Quest projekt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.GlostestResultat.resources
 K:\PHP Quest projekt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.GlostestSvår.resources
 K:\PHP Quest projekt\PHP Quest Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.LäggTillSpråk.resources
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\bin\Debug\PHP Quest Real.exe.config
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP Quest Real.exe
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP Quest Real.pdb
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\bin\Debug\PHP Quest Real.exe
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\bin\Debug\PHP Quest Real.pdb
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP Quest Real.csprojResolveAssemblyReference.cache
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.Properties.Resources.resources
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.GlostestLätt.resources
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.GlostestResultat.resources
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.GlostestStart.resources
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.GlostestSvår.resources
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.LogInForm.resources
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.LäggTillGlosa.resources
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.LäggTillSpråk.resources
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.MainMenuForm.resources
+C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP Quest Real.csproj.GenerateResource.Cache

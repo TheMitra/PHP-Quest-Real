@@ -114,6 +114,7 @@
             this.btnGlostestStart.TabIndex = 11;
             this.btnGlostestStart.Text = "Starta glostest";
             this.btnGlostestStart.UseVisualStyleBackColor = false;
+            this.btnGlostestStart.Click += new System.EventHandler(this.btnGlostestStart_Click);
             // 
             // btnNySpråk
             // 
