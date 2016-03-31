@@ -25,11 +25,26 @@ namespace PHP_Quest_Real
         {
             InitializeComponent();
             listGlosor.TestData();
-            for (int i = 0; i < master.SizeGlostList(); i++)
+            for (int i = 0; i < master.SizeGlosList(); i++)
             {
                 glosLista.Items.Add(master.ShowGlosorSv(i));
             }
-            
+            for (int i = 0; i < master.SizeSpråkList(); i++)
+            {
+                språkLista.Items.Add(master.ShowSpråk(i));
+            }
+
+            //for (int i = 0; i < master.SizeGlosList(); i++)
+            //{
+            //    for (int p = 0; p < språkLista.Items.Count; p++)
+            //    {
+            //        if (master.ShowSpråk(i) != språkLista.Items[p].ToString())
+            //        {
+            //            språkLista.Items.Add(master.ShowSpråk(i));
+            //        }
+            //    }
+
+                    
         }
 
         private void btnNyGlosa_Click(object sender, EventArgs e)
@@ -45,6 +60,16 @@ namespace PHP_Quest_Real
         private void btnGlostestStart_Click(object sender, EventArgs e)
         {
             startGlostTest.Show();
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+        }
+
+        private void btnTaBort_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

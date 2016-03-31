@@ -37,6 +37,7 @@
             this.btnGlostestStart = new System.Windows.Forms.Button();
             this.btnNySpråk = new System.Windows.Forms.Button();
             this.btnNyGlosa = new System.Windows.Forms.Button();
+            this.btnReload = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblGlosaStatus
@@ -61,6 +62,7 @@
             this.btnTaBort.TabIndex = 16;
             this.btnTaBort.Text = "Ta bort";
             this.btnTaBort.UseVisualStyleBackColor = false;
+            this.btnTaBort.Click += new System.EventHandler(this.btnTaBort_Click);
             // 
             // lblSpråk
             // 
@@ -86,12 +88,11 @@
             // 
             // språkLista
             // 
-            this.språkLista.ColumnWidth = 120;
             this.språkLista.FormattingEnabled = true;
             this.språkLista.Location = new System.Drawing.Point(239, 35);
             this.språkLista.Name = "språkLista";
             this.språkLista.Size = new System.Drawing.Size(120, 134);
-            this.språkLista.TabIndex = 13;
+            this.språkLista.TabIndex = 12;
             // 
             // glosLista
             // 
@@ -140,11 +141,22 @@
             this.btnNyGlosa.UseVisualStyleBackColor = false;
             this.btnNyGlosa.Click += new System.EventHandler(this.btnNyGlosa_Click);
             // 
+            // btnReload
+            // 
+            this.btnReload.Location = new System.Drawing.Point(253, 240);
+            this.btnReload.Name = "btnReload";
+            this.btnReload.Size = new System.Drawing.Size(75, 23);
+            this.btnReload.TabIndex = 18;
+            this.btnReload.Text = "Reload";
+            this.btnReload.UseVisualStyleBackColor = true;
+            this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(374, 291);
+            this.Controls.Add(this.btnReload);
             this.Controls.Add(this.lblGlosaStatus);
             this.Controls.Add(this.btnTaBort);
             this.Controls.Add(this.lblSpråk);
@@ -172,5 +184,6 @@
         private System.Windows.Forms.Button btnGlostestStart;
         private System.Windows.Forms.Button btnNySpråk;
         private System.Windows.Forms.Button btnNyGlosa;
+        private System.Windows.Forms.Button btnReload;
     }
 }

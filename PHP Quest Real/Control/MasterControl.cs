@@ -80,10 +80,21 @@ namespace PHP_Quest_Real
             string glosa = glosLista.ListGlosor[i].Ord;
             return glosa;
         }
+        // Visa språk
+        public string ShowSpråk(int i)
+        {
+            string språk = glosLista.ListSpråk[i];
+            return språk;
+            
+        } 
         // Visa storlek av gloslista
-        public int SizeGlostList()
+        public int SizeGlosList()
         {
             return glosLista.ListGlosor.Count;
+        }
+        public int SizeSpråkList()
+        {
+            return glosLista.ListSpråk.Count;
         }
 
 

@@ -26,12 +26,20 @@ namespace PHP_Quest_Real
             set { value = listGlosor; }
         }
 
+        public List<string> ListSpråk
+        {
+            get { return språkLista; }
+            set { value = språkLista; }
+        }
+
 
         public Glosa Glosa
         {
             get { return glosa; }
             set { glosa = value; }
         }
+
+        
         
 
         public void Add(Glosa item)
@@ -90,6 +98,7 @@ namespace PHP_Quest_Real
             språkLista.Add(språk);
             return true;
         }
+        
 
         public void TestData()
         {
@@ -106,6 +115,13 @@ namespace PHP_Quest_Real
             ord = new Glosa("Gammal", "Old", "Engelska", new User("Amanda", "Password"));
             listGlosor.Add(ord);
 
+            for (int i = 0; i < listGlosor.Count; i++)
+            {
+                if (!språkLista.Contains<string>(listGlosor[i].Språk))
+                {
+                    språkLista.Add(listGlosor[i].Språk);
+                }
+            }
         }
 
     }
