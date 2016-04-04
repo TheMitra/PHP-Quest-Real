@@ -100,21 +100,21 @@ namespace PHP_Quest_Real
 
 
         /*      Metoder för glostest                */
-        /* Ett lätt test presenterar flera glosor(tre) som man behöver välja mellan och
+        /* Ett lätt test presenterar flera glosor(fyra) som man behöver välja mellan och
         en av de är den rätta glosan. Man har tre försök på sig att välja rätt glosa
         igenom hela testet. */ 
-        public void Lätt(string språk)
+        public void LättSetup(string språk, bool omTreFörsök)
         {
-            while (glosTest.AntalGlosor != 0 || glosTest.Exit == false)
-            {
-                Glosa felGlosa1;
-                Glosa felGlosa2;
+            glosTest.AntalGlosor = 3;
 
-                if (glosTest.Kontroll() == true)
-                {
-
-                }
-            }
+            GlosTestControl control = new GlosTestControl(språk, omTreFörsök);
+                   
+            Glosa felGlosa1 = control.SlumpaGlosa();
+            Glosa felGlosa2 = control.SlumpaGlosa();
+            Glosa felGlosa3 = control.SlumpaGlosa();
+            Glosa rättGlosa = control.SlumpaGlosa();                
+            
+            
         }
 
         public CurrentUser CurrentUser

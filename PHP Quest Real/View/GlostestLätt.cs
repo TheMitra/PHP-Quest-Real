@@ -12,9 +12,25 @@ namespace PHP_Quest_Real.View
 {
     public partial class GlostestLätt : Form
     {
+        private string språk;
+
+        public GlostestLätt(string språk)
+        {
+            this.språk = språk;
+        }
+
+        public string Språk
+        {
+            get { return språk; }
+            set { språk = value; }
+        }
+
         public GlostestLätt()
         {
             InitializeComponent();
+            MasterControl master = new MasterControl();
+            GlosTestControl control = new GlosTestControl();
+            
         }
     }
 }

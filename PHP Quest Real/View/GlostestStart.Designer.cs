@@ -33,7 +33,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbSpråk = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.rbSvår = new System.Windows.Forms.RadioButton();
@@ -94,13 +94,13 @@
             this.listBox2.Size = new System.Drawing.Size(93, 147);
             this.listBox2.TabIndex = 13;
             // 
-            // listBox1
+            // lbSpråk
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 39);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(91, 147);
-            this.listBox1.TabIndex = 12;
+            this.lbSpråk.FormattingEnabled = true;
+            this.lbSpråk.Location = new System.Drawing.Point(12, 39);
+            this.lbSpråk.Name = "lbSpråk";
+            this.lbSpråk.Size = new System.Drawing.Size(91, 147);
+            this.lbSpråk.TabIndex = 12;
             // 
             // label5
             // 
@@ -203,7 +203,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbSpråk);
             this.Name = "GlostestStart";
             this.Text = "GlostestStart";
             this.ResumeLayout(false);
@@ -218,7 +218,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbSpråk;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton rbSvår;

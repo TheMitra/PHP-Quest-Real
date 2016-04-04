@@ -34,7 +34,7 @@
             this.btnOrd3 = new System.Windows.Forms.Button();
             this.btnOrd2 = new System.Windows.Forms.Button();
             this.btnOrd1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblGlosa = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label3
@@ -97,15 +97,15 @@
             this.btnOrd1.Text = "Val 1";
             this.btnOrd1.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblGlosa
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(81, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 22);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Slumpat svenskt ord";
+            this.lblGlosa.AutoSize = true;
+            this.lblGlosa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGlosa.Location = new System.Drawing.Point(81, 43);
+            this.lblGlosa.Name = "lblGlosa";
+            this.lblGlosa.Size = new System.Drawing.Size(172, 22);
+            this.lblGlosa.TabIndex = 7;
+            this.lblGlosa.Text = "Slumpat svenskt ord";
             // 
             // GlostestLätt
             // 
@@ -118,7 +118,7 @@
             this.Controls.Add(this.btnOrd3);
             this.Controls.Add(this.btnOrd2);
             this.Controls.Add(this.btnOrd1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblGlosa);
             this.Name = "GlostestLätt";
             this.Text = "GlostestLätt";
             this.ResumeLayout(false);
@@ -134,6 +134,6 @@
         private System.Windows.Forms.Button btnOrd3;
         private System.Windows.Forms.Button btnOrd2;
         private System.Windows.Forms.Button btnOrd1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblGlosa;
     }
 }

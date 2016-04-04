@@ -100,9 +100,21 @@ namespace PHP_Quest_Real
             return false;
         }
 
-        public void Lätt()
+        // Slumpar fram en glosa beroende på vilket språk som är valt
+        public Glosa SlumpaGlosa()
         {
+            GlosLista glosLista = new GlosLista();
+            List<Glosa> listGlosor = new List<Glosa>();
+            glosLista.SlumpaGlosaList(språk);
+            Random random = new Random();
+            int n = random.Next(0, glosLista.ListGlosor.Count);
+
+            Glosa glosa = new Glosa(glosLista.ListGlosor[n].Ord,
+                                    glosLista.ListGlosor[n].Språk,
+                                    glosLista.ListGlosor[n].Språk,
+                                    glosLista.ListGlosor[n].User); 
             
+            return glosa;
         }
 
         public void Svår()

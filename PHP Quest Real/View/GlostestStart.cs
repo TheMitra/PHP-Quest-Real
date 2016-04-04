@@ -27,6 +27,7 @@ namespace PHP_Quest_Real.View
         {
             if (rbLätt.Checked == true)
             {
+                gtLätt.språk = 
                 gtLätt.Show();
                 this.Hide();
             }

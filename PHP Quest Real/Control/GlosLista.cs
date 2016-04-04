@@ -57,6 +57,22 @@ namespace PHP_Quest_Real
 
         }
 
+        public List<Glosa> SlumpaGlosaList(string språk)
+        {
+            TestData();
+            Random random = new Random();
+            List<Glosa> lista = new List<Glosa>();
+            for (int i = 0; i < listGlosor.Count; i++)
+            {
+                if (listGlosor[i].Språk.ToLower() == språk.ToLower())
+                {
+                    lista.Add(listGlosor[i]);
+                }
+            }
+
+            return lista;
+        }
+
         public bool RegistreraGlosaValid(string ord, string översättning , string språk, User user)
         {
             // Input to lowercase med hjälp av metoden ToLower()
