@@ -15,7 +15,7 @@ namespace PHP_Quest_Real.View
     {
 
         //Forms
-        GlostestLätt gtLätt = new GlostestLätt();
+        GlostestLätt gtLätt;
         GlostestSvår gtSvår = new GlostestSvår();
         
         public GlostestStart()
@@ -27,7 +27,7 @@ namespace PHP_Quest_Real.View
         {
             if (rbLätt.Checked == true)
             {
-                gtLätt.språk = 
+                gtLätt.Språk = lbSpråk.SelectedItem.ToString();
                 gtLätt.Show();
                 this.Hide();
             }
