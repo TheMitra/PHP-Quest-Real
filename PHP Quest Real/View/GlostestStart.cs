@@ -15,12 +15,17 @@ namespace PHP_Quest_Real.View
     {
 
         //Forms
-        GlostestLätt gtLätt;
+        GlostestLätt gtLätt = new GlostestLätt();
         GlostestSvår gtSvår = new GlostestSvår();
         
         public GlostestStart()
         {
-            InitializeComponent(); 
+            InitializeComponent();
+            MasterControl master = new MasterControl();
+            for (int i = 0; i < master.SizeSpråkList(); i++)
+            {
+                lbSpråk.Items.Add(master.ShowSpråk(i));
+            }
         }
 
         private void btnStart_Click(object sender, EventArgs e)

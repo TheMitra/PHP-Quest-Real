@@ -101,7 +101,7 @@ namespace PHP_Quest_Real
         }
 
         // Slumpar fram en glosa beroende på vilket språk som är valt
-        public Glosa SlumpaGlosa()
+        public Glosa SlumpaGlosa(string språk)
         {
             GlosLista glosLista = new GlosLista();
             List<Glosa> listGlosor = new List<Glosa>();
