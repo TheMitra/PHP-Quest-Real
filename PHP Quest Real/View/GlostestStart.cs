@@ -15,8 +15,9 @@ namespace PHP_Quest_Real.View
     {
 
         //Forms
-        GlostestLätt gtLätt = new GlostestLätt();
-        GlostestSvår gtSvår = new GlostestSvår();
+        GlostestLätt gtLätt;
+        GlostestSvår gtSvår;
+        
         
         public GlostestStart()
         {
@@ -25,22 +26,32 @@ namespace PHP_Quest_Real.View
             for (int i = 0; i < master.SizeSpråkList(); i++)
             {
                 lbSpråk.Items.Add(master.ShowSpråk(i));
-            }
+            }                      
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            if (rbLätt.Checked == true)
+            // Kontrollerar att du valt ett språk i listan
+            if (lbSpråk.SelectedItem != null)
             {
-                gtLätt.Språk = lbSpråk.SelectedItem.ToString();
-                gtLätt.Show();
-                this.Hide();
+                if (rbLätt.Checked == true)
+                {
+                    gtLätt = new GlostestLätt(lbSpråk.SelectedItem.ToString());
+                    gtLätt.Show();
+                    this.Hide();
+                }
+
+                if (rbSvår.Checked == true)
+                {
+                    gtSvår = new GlostestSvår();
+                    gtSvår.Show();
+                    this.Hide();
+                }
             }
-            if (rbSvår.Checked == true)
+            else
             {
-                gtSvår.Show();
-                this.Hide();
-            }
+                lblStatus.Text = "Error!";
+            }     
         }
     }
 }

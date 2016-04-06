@@ -71,6 +71,7 @@
             // 
             this.txbPassword.Location = new System.Drawing.Point(137, 59);
             this.txbPassword.Name = "txbPassword";
+            this.txbPassword.PasswordChar = '*';
             this.txbPassword.Size = new System.Drawing.Size(100, 20);
             this.txbPassword.TabIndex = 3;
             // 

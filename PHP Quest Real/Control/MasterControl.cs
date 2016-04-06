@@ -103,19 +103,19 @@ namespace PHP_Quest_Real
         /* Ett lätt test presenterar flera glosor(fyra) som man behöver välja mellan och
         en av de är den rätta glosan. Man har tre försök på sig att välja rätt glosa
         igenom hela testet. */ 
-        public void LättSetup(string språk, bool omTreFörsök)
-        {
-            glosTest.AntalGlosor = 3;
+        //public void LättSetup(string språk, bool omTreFörsök)
+        //{
+        //    glosTest.AntalGlosor = 3;
 
-            GlosTestControl control = new GlosTestControl(språk, omTreFörsök);
+        //    GlosTestControl control = new GlosTestControl(språk, omTreFörsök);
                    
-            Glosa felGlosa1 = control.SlumpaGlosa();
-            Glosa felGlosa2 = control.SlumpaGlosa();
-            Glosa felGlosa3 = control.SlumpaGlosa();
-            Glosa rättGlosa = control.SlumpaGlosa();                
+        //    Glosa felGlosa1 = control.SlumpaGlosa();
+        //    Glosa felGlosa2 = control.SlumpaGlosa();
+        //    Glosa felGlosa3 = control.SlumpaGlosa();
+        //    Glosa rättGlosa = control.SlumpaGlosa();                
             
             
-        }
+        //}
 
         public CurrentUser CurrentUser
         {

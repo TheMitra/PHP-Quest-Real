@@ -42,7 +42,6 @@ C:\Users\Amandas\Documents\Projects\Gymnasiearbete\PHP-Quest-Real\PHP Quest Real
 K:\PHP-Quest-Real\PHP Quest Real\bin\Debug\PHP Quest Real.exe.config
 K:\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP Quest Real.exe
 K:\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP Quest Real.pdb
-K:\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP Quest Real.csprojResolveAssemblyReference.cache
 K:\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.Properties.Resources.resources
 K:\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.GlostestLätt.resources
 K:\PHP-Quest-Real\PHP Quest Real\obj\Debug\PHP_Quest_Real.View.GlostestResultat.resources

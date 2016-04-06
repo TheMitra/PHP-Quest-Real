@@ -16,13 +16,15 @@ namespace PHP_Quest_Real
         // Forms
         LäggTillSpråk addSpråk = new LäggTillSpråk();
         LäggTillGlosa addGlosa = new LäggTillGlosa();
-        GlostestStart startGlostTest = new GlostestStart();
+        GlostestStart startGlostTest;
 
         // Klasser och listor
         MasterControl master = new MasterControl();
         GlosLista listGlosor = new GlosLista();
+
         public MainMenuForm()
         {
+            // Bör ändras så man går via master istället
             InitializeComponent();
             listGlosor.TestData();
             for (int i = 0; i < master.SizeGlosList(); i++)
@@ -59,6 +61,7 @@ namespace PHP_Quest_Real
 
         private void btnGlostestStart_Click(object sender, EventArgs e)
         {
+            startGlostTest = new GlostestStart();
             startGlostTest.Show();
         }
 

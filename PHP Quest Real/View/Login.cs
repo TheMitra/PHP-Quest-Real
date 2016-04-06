@@ -13,12 +13,14 @@ namespace PHP_Quest_Real
 {
     public partial class LogInForm : Form
     {
-        MasterControl master = new MasterControl();
-        MainMenuForm mainMenu = new MainMenuForm();
+        MasterControl master;
+        MainMenuForm mainMenu;
 
         public LogInForm()
         {            
             InitializeComponent();
+            master = new MasterControl();
+            mainMenu = new MainMenuForm();
         }
 
         private void btnLogIn_Click(object sender, EventArgs e)
