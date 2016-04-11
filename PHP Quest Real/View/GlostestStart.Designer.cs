@@ -34,7 +34,7 @@
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.lbSpråk = new System.Windows.Forms.ListBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.rbSvår = new System.Windows.Forms.RadioButton();
             this.rbLätt = new System.Windows.Forms.RadioButton();
@@ -102,15 +102,15 @@
             this.lbSpråk.Size = new System.Drawing.Size(91, 147);
             this.lbSpråk.TabIndex = 12;
             // 
-            // label5
+            // lblStatus
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(193, 237);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 15);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "Statusmeddelande";
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(193, 237);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(111, 15);
+            this.lblStatus.TabIndex = 33;
+            this.lblStatus.Text = "Statusmeddelande";
             // 
             // label4
             // 
@@ -190,7 +190,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(364, 309);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rbSvår);
             this.Controls.Add(this.rbLätt);
@@ -219,7 +219,7 @@
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox lbSpråk;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RadioButton rbSvår;
         private System.Windows.Forms.RadioButton rbLätt;
