@@ -13,11 +13,10 @@ namespace PHP_Quest_Real.View
     public partial class GlostestLätt : Form
     {
         private string språk;
-
-        public GlostestLätt(string språk)
-        {
-            this.språk = språk;
-        }
+        // Initierar klasser:
+        MasterControl master = new MasterControl();
+        GlosTestControl control;
+        
 
         // Get- set metod för språk
         public string Språk
@@ -26,18 +25,18 @@ namespace PHP_Quest_Real.View
             set { språk = value; }
         }
 
-        public GlostestLätt()
+        public GlostestLätt(string språk)
         {
             InitializeComponent();
-            // Initierar klasser:
-            MasterControl master = new MasterControl();
-            GlosTestControl control = new GlosTestControl(språk, true);
+            this.språk = språk;
+            control = new GlosTestControl(språk, true);
             control.Språk = språk;
             // Randomizera ord från språk:
-            btnOrd1.Text = control.SlumpaGlosa(språk).Ord;
-            btnOrd2.Text = control.SlumpaGlosa(språk).Ord;
-            btnOrd3.Text = control.SlumpaGlosa(språk).Ord;
-            btnOrd4.Text = control.SlumpaGlosa(språk).Ord;
+            btnOrd1.Text = control.SlumpaGlosa(språk, master.GlosLista).Ord.ToString();
+            btnOrd2.Text = control.SlumpaGlosa(språk, master.GlosLista).Ord.ToString();
+            btnOrd3.Text = control.SlumpaGlosa(språk, master.GlosLista).Ord.ToString();
+            btnOrd4.Text = control.SlumpaGlosa(språk, master.GlosLista).Ord.ToString();
+            
         }
     }
 }

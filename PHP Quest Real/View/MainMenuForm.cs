@@ -14,8 +14,8 @@ namespace PHP_Quest_Real
     public partial class MainMenuForm : Form
     {
         // Forms
-        LäggTillSpråk addSpråk = new LäggTillSpråk();
-        LäggTillGlosa addGlosa = new LäggTillGlosa();
+        LäggTillSpråk addSpråk;
+        LäggTillGlosa addGlosa;
         GlostestStart startGlostTest;
 
         // Klasser och listor
@@ -24,8 +24,8 @@ namespace PHP_Quest_Real
 
         public MainMenuForm()
         {
-            // Bör ändras så man går via master istället
             InitializeComponent();
+            // Bör ändras så man går via master istället
             listGlosor.TestData();
             for (int i = 0; i < master.SizeGlosList(); i++)
             {
@@ -51,11 +51,13 @@ namespace PHP_Quest_Real
 
         private void btnNyGlosa_Click(object sender, EventArgs e)
         {
+            addGlosa = new LäggTillGlosa();
             addGlosa.Show();
         }
 
         private void btnNySpråk_Click(object sender, EventArgs e)
         {
+            addSpråk = new LäggTillSpråk();
             addSpråk.Show();
         }
 
