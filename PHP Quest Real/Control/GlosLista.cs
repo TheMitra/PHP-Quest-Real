@@ -57,11 +57,10 @@ namespace PHP_Quest_Real
 
         }
 
-        public List<Glosa> SlumpaGlosaList(string språk)
+        public GlosLista SlumpaGlosaList(string språk)
         {
-            TestData();
             Random random = new Random();
-            List<Glosa> lista = new List<Glosa>();
+            GlosLista lista = new GlosLista();
             for (int i = 0; i < listGlosor.Count; i++)
             {
                 if (listGlosor[i].Språk.ToLower() == språk.ToLower())

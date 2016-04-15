@@ -96,6 +96,7 @@
             this.btnOrd1.TabIndex = 8;
             this.btnOrd1.Text = "Val 1";
             this.btnOrd1.UseVisualStyleBackColor = true;
+            this.btnOrd1.Click += new System.EventHandler(this.btnOrd1_Click);
             // 
             // lblGlosa
             // 

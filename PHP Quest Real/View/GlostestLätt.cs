@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PHP_Quest_Real.Control;
 
 namespace PHP_Quest_Real.View
 {
@@ -14,7 +15,7 @@ namespace PHP_Quest_Real.View
     {
         private string språk;
         // Initierar klasser:
-        MasterControl master = new MasterControl();
+        MasterControl master;
         GlosTestControl control;
         
 
@@ -29,14 +30,20 @@ namespace PHP_Quest_Real.View
         {
             InitializeComponent();
             this.språk = språk;
+            master = new MasterControl();
             control = new GlosTestControl(språk, true);
             control.Språk = språk;
-            // Randomizera ord från språk:
-            btnOrd1.Text = control.SlumpaGlosa(språk, master.GlosLista).Ord.ToString();
-            btnOrd2.Text = control.SlumpaGlosa(språk, master.GlosLista).Ord.ToString();
-            btnOrd3.Text = control.SlumpaGlosa(språk, master.GlosLista).Ord.ToString();
-            btnOrd4.Text = control.SlumpaGlosa(språk, master.GlosLista).Ord.ToString();
-            
+            // Slumpa ord från språk:
+            btnOrd1.Text = control.SlumpaGlosa(språk, master.GlosLista).Översättning.ToString();
+            btnOrd2.Text = control.SlumpaGlosa(språk, master.GlosLista).Översättning.ToString();
+            btnOrd3.Text = control.SlumpaGlosa(språk, master.GlosLista).Översättning.ToString();
+            btnOrd4.Text = control.SlumpaGlosa(språk, master.GlosLista).Översättning.ToString();
+
+        }
+
+        private void btnOrd1_Click(object sender, EventArgs e)
+        {
+            control.Kontroll();
         }
     }
 }

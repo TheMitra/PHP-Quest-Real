@@ -18,11 +18,13 @@ namespace PHP_Quest_Real
         private bool omTreFörsök;
         private int treFörsök = 3;
         private bool exit = false;
+        private List<Glosa> slumpGlosor;
 
         public GlosTestControl(string språk, bool omTreFörsök)
         {
             this.språk = språk;
             this.omTreFörsök = omTreFörsök;
+            slumpGlosor = new List<Glosa>();
         }
 
         public int AntalRätt
@@ -102,16 +104,24 @@ namespace PHP_Quest_Real
 
         // Slumpar fram en glosa beroende på vilket språk som är valt
         public Glosa SlumpaGlosa(string språk, GlosLista glosLista)
-        {            
+        {              
             List<Glosa> listGlosor = new List<Glosa>();
-            glosLista.SlumpaGlosaList(språk);
-            Random random = new Random();
-            int n = random.Next(0, glosLista.ListGlosor.Count);
+            // Tar fram glosorna baserat på det valdar språket:
+            glosLista = glosLista.SlumpaGlosaList(språk);
 
-            Glosa glosa = new Glosa(glosLista.ListGlosor[n].Ord,
+            // Ta fram random glosa tills den inte matchar någon av de som redan slumpats fram.
+            do
+            {
+
+                Random random = new Random();
+                int n = random.Next(0, glosLista.ListGlosor.Count);
+                Glosa glosa = new Glosa(glosLista.ListGlosor[n].Ord,
                                     glosLista.ListGlosor[n].Översättning,
                                     glosLista.ListGlosor[n].Språk,
-                                    glosLista.ListGlosor[n].User); 
+                                    glosLista.ListGlosor[n].User);
+            } while (slumpGlosor.Contains(glosa));            
+            
+            slumpGlosor.Add(glosa);
             
             return glosa;
         }
