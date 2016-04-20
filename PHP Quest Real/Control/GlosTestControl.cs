@@ -107,7 +107,7 @@ namespace PHP_Quest_Real
         {              
             List<Glosa> listGlosor = new List<Glosa>();
             // Tar fram glosorna baserat på det valdar språket:
-            glosLista = glosLista.SlumpaGlosaList(språk);
+            glosLista.ListGlosor = glosLista.SlumpaGlosaList(språk);
 
             // Ta fram random glosa tills den inte matchar någon av de som redan slumpats fram.
             do
