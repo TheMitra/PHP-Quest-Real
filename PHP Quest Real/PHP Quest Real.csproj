@@ -47,10 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Control\CurrentUser.cs" />
-    <Compile Include="Control\GlosLista.cs" />
+    <Compile Include="Model\GlosLista.cs" />
     <Compile Include="Control\GlosTestControl.cs" />
     <Compile Include="Control\MasterControl.cs" />
-    <Compile Include="Control\UserList.cs" />
+    <Compile Include="Model\UserList.cs" />
     <Compile Include="DAL\ReadWriteFile.cs" />
     <Compile Include="Model\Glosa.cs" />
     <Compile Include="Model\User.cs" />
