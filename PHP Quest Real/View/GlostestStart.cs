@@ -36,7 +36,7 @@ namespace PHP_Quest_Real.View
             {
                 if (rbLätt.Checked == true)
                 {
-                    gtLätt = new GlostestLätt(lbSpråk.SelectedItem.ToString());
+                    gtLätt = new GlostestLätt(lbSpråk.SelectedItem.ToString(), cBtreFörsök.Checked);
                     gtLätt.Språk = lbSpråk.SelectedItem.ToString();
                     gtLätt.Show();
                 }

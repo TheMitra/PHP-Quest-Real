@@ -42,6 +42,7 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.cBtreFörsök = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label2
@@ -185,11 +186,22 @@
             this.button1.Text = "Lägg till";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // cBtreFörsök
+            // 
+            this.cBtreFörsök.AutoSize = true;
+            this.cBtreFörsök.Location = new System.Drawing.Point(12, 301);
+            this.cBtreFörsök.Name = "cBtreFörsök";
+            this.cBtreFörsök.Size = new System.Drawing.Size(74, 17);
+            this.cBtreFörsök.TabIndex = 34;
+            this.cBtreFörsök.Text = "Tre försök";
+            this.cBtreFörsök.UseVisualStyleBackColor = true;
+            // 
             // GlostestStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(364, 309);
+            this.ClientSize = new System.Drawing.Size(364, 336);
+            this.Controls.Add(this.cBtreFörsök);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.rbSvår);
@@ -227,5 +239,6 @@
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox cBtreFörsök;
     }
 }

@@ -12,7 +12,6 @@ namespace PHP_Quest_Real
         // Datamedlemmar:
         private List<Glosa> listGlosor;                  // Skapar en lista av glosklassen.
         private List<string> språkLista;
-        private Glosa glosa;
 
         public GlosLista()
         {
@@ -30,17 +29,7 @@ namespace PHP_Quest_Real
         {
             get { return språkLista; }
             set { value = språkLista; }
-        }
-
-
-        public Glosa Glosa
-        {
-            get { return glosa; }
-            set { glosa = value; }
-        }
-
-        
-        
+        }       
 
         public void Add(Glosa item)
         {
@@ -57,10 +46,10 @@ namespace PHP_Quest_Real
 
         }
 
-        public GlosLista SlumpaGlosaList(string språk)
+        public List<Glosa> GlosListSpråk(string språk)
         {
             Random random = new Random();
-            GlosLista lista = new GlosLista();
+            List<Glosa> lista = new List<Glosa>();
             for (int i = 0; i < listGlosor.Count; i++)
             {
                 if (listGlosor[i].Språk.ToLower() == språk.ToLower())

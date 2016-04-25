@@ -18,13 +18,14 @@ namespace PHP_Quest_Real
         private bool omTreFörsök;
         private int treFörsök = 3;
         private bool exit = false;
-        private List<Glosa> slumpGlosor;
+        private List<Glosa> testGlosor = new List<Glosa>();
+        private Glosa slumpadGlosa;
 
         public GlosTestControl(string språk, bool omTreFörsök)
         {
             this.språk = språk;
             this.omTreFörsök = omTreFörsök;
-            slumpGlosor = new List<Glosa>();
+            testGlosor = new List<Glosa>();
         }
 
         public int AntalRätt
@@ -103,27 +104,20 @@ namespace PHP_Quest_Real
         }
 
         // Slumpar fram en glosa beroende på vilket språk som är valt
+        // Lär returnera en lista på 3 unika glosor varav 1 ska vara rätt
         public Glosa SlumpaGlosa(string språk, GlosLista glosLista)
-        {              
-            List<Glosa> listGlosor = new List<Glosa>();
-            // Tar fram glosorna baserat på det valdar språket:
-            glosLista = glosLista.SlumpaGlosaList(språk);
-
-            // Ta fram random glosa tills den inte matchar någon av de som redan slumpats fram.
-            do
+        {
+            // Gör en lista med de glosor som ska slumpas
+            for (int number = 0; number < glosLista.ListGlosor.Count; number++)
             {
 
-                Random random = new Random();
-                int n = random.Next(0, glosLista.ListGlosor.Count);
-                Glosa glosa = new Glosa(glosLista.ListGlosor[n].Ord,
-                                    glosLista.ListGlosor[n].Översättning,
-                                    glosLista.ListGlosor[n].Språk,
-                                    glosLista.ListGlosor[n].User);
-            } while (slumpGlosor.Contains(glosa));            
-            
-            slumpGlosor.Add(glosa);
-            
-            return glosa;
+            }
+
+            Random r = new Random();            
+            int i = r.Next(0, glosLista.ListGlosor.Count); 
+            slumpadGlosa = new Glosa(
+
+                return slumpadGlosa;
         }
 
         public void Svår()
