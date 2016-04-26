@@ -29,13 +29,19 @@ namespace PHP_Quest_Real.View
         {
             InitializeComponent();
             this.språk = språk;
-            MasterControl master;
-            GlosTestControl control;
-            master = new MasterControl();
-            control = new GlosTestControl(språk, true);
+
+            MasterControl master = new MasterControl(); ;
+            GlosTestControl control = new GlosTestControl(språk, true);
+
             control.Språk = språk;
+            // Initiera testglosor
+            control.InitTestGlosor(språk, master.GlosLista);
+
             // Slumpa ord från språk:
-            control.SlumpaGlosa(språk, master.GlosLista);
+            btnOrd1.Text = control.SlumpaGlosa(språk, master.GlosLista).Ord;
+            btnOrd2.Text = control.SlumpaGlosa(språk, master.GlosLista).Ord;
+            btnOrd3.Text = control.SlumpaGlosa(språk, master.GlosLista).Ord;
+            btnOrd4.Text = control.SlumpaGlosa(språk, master.GlosLista).Ord;
 
         }
 

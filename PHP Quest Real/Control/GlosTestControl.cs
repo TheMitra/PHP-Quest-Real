@@ -103,19 +103,31 @@ namespace PHP_Quest_Real
             return false;
         }
 
+        public void InitTestGlosor(string språk, GlosLista glosLista)
+        {
+            for (int number = 0; number < glosLista.ListGlosor.Count; number++)
+            {
+                if (glosLista.ListGlosor[number].Språk.ToLower() == språk.ToLower())
+                {
+                    testGlosor.Add(glosLista.ListGlosor[number]);
+                }
+            }
+        }
+
         // Slumpar fram en glosa beroende på vilket språk som är valt
         // Lär returnera en lista på 3 unika glosor varav 1 ska vara rätt
         public Glosa SlumpaGlosa(string språk, GlosLista glosLista)
         {
             // Gör en lista med de glosor som ska slumpas
-            for (int number = 0; number < glosLista.ListGlosor.Count; number++)
-            {
-
-            }
+            
 
             Random r = new Random();            
-            int i = r.Next(0, glosLista.ListGlosor.Count); 
-            slumpadGlosa = new Glosa(
+            int i = r.Next(0, glosLista.ListGlosor.Count);
+            slumpadGlosa = new Glosa(testGlosor[i].Ord,
+                testGlosor[i].Översättning,
+                testGlosor[i].Språk,
+                testGlosor[i].User
+                );
 
                 return slumpadGlosa;
         }
